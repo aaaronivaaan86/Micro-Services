@@ -1,0 +1,222 @@
+﻿2022-01-28T10:30:08.7930883-06:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2022-01-28T10:30:08.7932116-06:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.9.7 in Framework netcore31 in x64 mode execution started
+2022-01-28T10:30:08.7932148-06:00;VSTestExecutionThread;Info;TestAdapter Location: D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2022-01-28T10:30:08.7946758-06:00;VSTestExecutionThread;Info;Current UserName: 'aaron', MachineName: 'MSI'
+2022-01-28T10:30:08.8167567-06:00;VSTestExecutionThread;Info;SpecRun: running tests in D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformServiceSpecFlowProject.dll
+2022-01-28T10:30:08.8169221-06:00;VSTestExecutionThread;Info;Output folder configured to "D:\poo\netcore\PlatformService\TestResults" (default)
+2022-01-28T10:30:08.8169689-06:00;VSTestExecutionThread;Info;Profile: 
+2022-01-28T10:30:08.8418826-06:00;VSTestExecutionThread;Info;Log file path: D:\poo\netcore\PlatformService\TestResults\Unnamed project__2022-01-28T103008.log
+2022-01-28T10:30:08.8447071-06:00;Thread#12;Info;Checking activation
+2022-01-28T10:30:08.9061209-06:00;Thread#12;Info;Activated.
+2022-01-28T10:30:08.9062892-06:00;Thread#12;Info;Activation check completed
+2022-01-28T10:30:08.9063548-06:00;Thread#12;Info;Starting test run
+2022-01-28T10:30:08.9615547-06:00;Thread#12;Info;Discovering target: Default
+2022-01-28T10:30:08.9616842-06:00;Thread#12;Info;Discovering tests from assembly: D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformServiceSpecFlowProject.dll
+2022-01-28T10:30:09.0198859-06:00;Thread#12;Info;Discovered tests from assembly: D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformServiceSpecFlowProject.dll
+2022-01-28T10:30:09.0205926-06:00:Test Suite Dump
+2022-01-28T10:30:09.0216306-06:00:#0: Unnamed project/ - 
+2022-01-28T10:30:09.0216518-06:00:#1: Default - 
+2022-01-28T10:30:09.0216540-06:00:#2: PlatformServiceSpecFlowProject - 
+2022-01-28T10:30:09.0216553-06:00:#3: PlatformService - 
+2022-01-28T10:30:09.0223794-06:00:#4: Count the list lenght - TestAssembly:PlatformServiceSpecFlowProject/Feature:PlatformService/Scenario:Count+the+list+lenght
+2022-01-28T10:30:09.0224082-06:00:End: Test Suite Dump
+2022-01-28T10:30:09.0329624-06:00:Thread#0:Scheduler: get next test for thread 0
+2022-01-28T10:30:09.0340635-06:00:Thread#:Scheduler: testitem #4 from normal test queue 
+2022-01-28T10:30:09.0341023-06:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-01-28T10:30:09.0360778-06:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-01-28T10:30:09.0360916-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-01-28T10:30:09.0360935-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-01-28T10:30:09.0360955-06:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-01-28T10:30:09.0365080-06:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-01-28T10:30:09.0371348-06:00:Thread#0:Scheduler: with testItemExecutionIndex 0
+2022-01-28T10:30:09.0384742-06:00:Thread #0: creating new test thread executor for PlatformServiceSpecFlowProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+2022-01-28T10:30:09.0399863-06:00:Thread #0: Creating test assembly executor for execution model OutProc
+2022-01-28T10:30:09.0401084-06:00:Thread #0: Creating test assembly executor for execution model OutProc
+2022-01-28T10:30:09.0412397-06:00:Thread #0: using TechTalk.SpecRun.Framework.Execution.OutOfProc.StreamJsonRPC.OutOfProcessTestAssemblyExecutorHost to execute tests
+2022-01-28T10:30:09.0422680-06:00:starting Out Of Process Executor
+2022-01-28T10:30:09.0434235-06:00:Assembly resolving Microsoft.VisualStudio.Validation, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2022-01-28T10:30:09.0451376-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' from .deps.json file
+2022-01-28T10:30:09.0451494-06:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' from .deps.json
+2022-01-28T10:30:09.0458585-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.0460930-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2022-01-28T10:30:09.0461272-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.exe'
+2022-01-28T10:30:09.0461382-06:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Validation' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.0462499-06:00:TargetFramework: .NETCoreApp,Version=v3.1
+2022-01-28T10:30:09.0465868-06:00:Tfm: netcoreapp3.1
+2022-01-28T10:30:09.0465964-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2022-01-28T10:30:09.0465980-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Validation' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll'
+2022-01-28T10:30:09.0466174-06:00:[AssemblyCache] Found file 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll' for assembly 'Microsoft.VisualStudio.Validation'
+2022-01-28T10:30:09.0468675-06:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Validation' to D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll
+2022-01-28T10:30:09.0474135-06:00:Starting callback TCP Rpc server
+2022-01-28T10:30:09.0662805-06:00:Asynchronously starting background TCP Rpc Server on port 32768
+2022-01-28T10:30:09.0663152-06:00:Started callback TCP Rpc server on port 32768
+2022-01-28T10:30:09.0663176-06:00:Starting logger TCP Rpc server
+2022-01-28T10:30:09.0683958-06:00:Asynchronously starting background TCP Rpc Server on port 32769
+2022-01-28T10:30:09.0684160-06:00:Started logger TCP Rpc server on port 32769
+2022-01-28T10:30:09.1225618-06:00:Executing test executor at 'dotnet' 'exec "D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.dll" --remoteRunnerPid 25452 --uniqueId "2022-01-28T103008" --outputFolder "D:\poo\netcore\PlatformService\TestResults" --callbackPort 32768 --loggerPort 32769' in 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.1278276-06:00:Executor with PID 3028 has been started successfully.
+2022-01-28T10:30:09.1301694-06:00:Out of Process Executor 3028 started
+2022-01-28T10:30:09.1301846-06:00:Waiting for endpoint
+2022-01-28T10:30:09.3375541-06:00:Assembly resolving Microsoft.VisualStudio.Threading, Version=15.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2022-01-28T10:30:09.3375791-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' from .deps.json file
+2022-01-28T10:30:09.3375834-06:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' from .deps.json
+2022-01-28T10:30:09.3375863-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.3375877-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2022-01-28T10:30:09.3376131-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.exe'
+2022-01-28T10:30:09.3376219-06:00:[AssemblyCache] Could not resolve 'Microsoft.VisualStudio.Threading' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.3376239-06:00:TargetFramework: .NETCoreApp,Version=v3.1
+2022-01-28T10:30:09.3376450-06:00:Tfm: netcoreapp3.1
+2022-01-28T10:30:09.3376478-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2022-01-28T10:30:09.3376488-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.Threading' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll'
+2022-01-28T10:30:09.3376622-06:00:[AssemblyCache] Found file 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll' for assembly 'Microsoft.VisualStudio.Threading'
+2022-01-28T10:30:09.3379429-06:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.Threading' to D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll
+2022-01-28T10:30:09.5143551-06:00:Remote executor port received: 32770
+2022-01-28T10:30:09.5146186-06:00:Creating executor TCP client on port 32770
+2022-01-28T10:30:09.5148725-06:00:Created executor TCP client on port 32770
+2022-01-28T10:30:09.5148805-06:00:Connecting to remote executor TCP server
+2022-01-28T10:30:09.5156379-06:00:Connected remote executor TCP server
+2022-01-28T10:30:09.5157231-06:00:trying to connect to Out of Process Executor the 1 attempt
+2022-01-28T10:30:09.5157326-06:00:Connection to Out of Process Executor established in the 1 attempt
+2022-01-28T10:30:09.6176720-06:00:2022-01-28T10:30:09.6169988-06:00:OutOfProcessTestAssemblyExecutor: initialized for D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformServiceSpecFlowProject.dll on test thread #0
+2022-01-28T10:30:09.6209159-06:00:Endpoint 3028 started
+2022-01-28T10:30:09.6338559-06:00:2022-01-28T10:30:09.6335208-06:00:OutOfProcessTestAssemblyExecutor: running tests...
+2022-01-28T10:30:09.7096643-06:00:2022-01-28T10:30:09.7093169-06:00:Assembly resolving TechTalk.SpecFlow, Version=3.9.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2022-01-28T10:30:09.7116086-06:00:2022-01-28T10:30:09.7114792-06:00:[AssemblyCache] Trying to resolve 'TechTalk.SpecFlow' from .deps.json file
+2022-01-28T10:30:09.7135297-06:00:2022-01-28T10:30:09.7131377-06:00:[AssemblyCache] Resolved 'TechTalk.SpecFlow' to 'C:\Users\aaron\.nuget\packages\specflow\3.9.8\lib\netstandard2.0\TechTalk.SpecFlow.dll'
+2022-01-28T10:30:09.7819177-06:00:2022-01-28T10:30:09.7816490-06:00:Thread#0:T:-> Loading plugin D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformServiceSpecFlowProject.dll
+2022-01-28T10:30:09.7826380-06:00:2022-01-28T10:30:09.7825166-06:00:Assembly resolving Microsoft.Extensions.DependencyModel, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-01-28T10:30:09.7828983-06:00:2022-01-28T10:30:09.7827902-06:00:[AssemblyCache] Trying to resolve 'Microsoft.Extensions.DependencyModel' from .deps.json file
+2022-01-28T10:30:09.7833305-06:00:2022-01-28T10:30:09.7831261-06:00:[AssemblyCache] Resolved 'Microsoft.Extensions.DependencyModel' to 'C:\Users\aaron\.nuget\packages\microsoft.extensions.dependencymodel\1.0.3\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll'
+2022-01-28T10:30:09.8107713-06:00:2022-01-28T10:30:09.8104605-06:00:Assembly resolving Microsoft.DotNet.PlatformAbstractions, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-01-28T10:30:09.8112528-06:00:2022-01-28T10:30:09.8110814-06:00:[AssemblyCache] Trying to resolve 'Microsoft.DotNet.PlatformAbstractions' from .deps.json file
+2022-01-28T10:30:09.8116426-06:00:2022-01-28T10:30:09.8115216-06:00:[AssemblyCache] Resolved 'Microsoft.DotNet.PlatformAbstractions' to 'C:\Users\aaron\.nuget\packages\microsoft.dotnet.platformabstractions\1.0.3\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll'
+2022-01-28T10:30:09.8163288-06:00:2022-01-28T10:30:09.8161055-06:00:Thread#0:T:-> Missing [assembly:RuntimePlugin] attribute in PlatformServiceSpecFlowProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.
+2022-01-28T10:30:09.8166073-06:00:2022-01-28T10:30:09.8164901-06:00:Thread#0:T:-> Loading plugin D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\LivingDoc.SpecFlowPlugin.dll
+2022-01-28T10:30:09.8176040-06:00:2022-01-28T10:30:09.8174967-06:00:Assembly resolving LivingDoc.Dtos, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+2022-01-28T10:30:09.8177949-06:00:2022-01-28T10:30:09.8176972-06:00:[AssemblyCache] Trying to resolve 'LivingDoc.Dtos' from .deps.json file
+2022-01-28T10:30:09.8180880-06:00:2022-01-28T10:30:09.8179809-06:00:[AssemblyCache] Resolved 'LivingDoc.Dtos' to 'C:\Users\aaron\.nuget\packages\specflow.plus.livingdocplugin\3.9.57\lib\netstandard2.0\LivingDoc.Dtos.dll'
+2022-01-28T10:30:09.8196334-06:00:2022-01-28T10:30:09.8193905-06:00:Thread#0:T:-> Loading plugin D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecRun.Runtime.SpecFlowPlugin.dll
+2022-01-28T10:30:09.8247279-06:00:2022-01-28T10:30:09.8245138-06:00:Thread#0:T:-> Using default config
+2022-01-28T10:30:09.8311409-06:00:2022-01-28T10:30:09.8308957-06:00:Assembly resolving Cucumber.Messages, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b10c5988214f940c
+2022-01-28T10:30:09.8314042-06:00:2022-01-28T10:30:09.8312825-06:00:[AssemblyCache] Trying to resolve 'Cucumber.Messages' from .deps.json file
+2022-01-28T10:30:09.8317855-06:00:2022-01-28T10:30:09.8316381-06:00:[AssemblyCache] Resolved 'Cucumber.Messages' to 'C:\Users\aaron\.nuget\packages\cucumber.messages\6.0.1\lib\netstandard2.0\Cucumber.Messages.dll'
+2022-01-28T10:30:09.8326114-06:00:2022-01-28T10:30:09.8324854-06:00:Assembly resolving Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604
+2022-01-28T10:30:09.8328204-06:00:2022-01-28T10:30:09.8327168-06:00:[AssemblyCache] Trying to resolve 'Google.Protobuf' from .deps.json file
+2022-01-28T10:30:09.8331166-06:00:2022-01-28T10:30:09.8329964-06:00:[AssemblyCache] Resolved 'Google.Protobuf' to 'C:\Users\aaron\.nuget\packages\google.protobuf\3.7.0\lib\netstandard1.0\Google.Protobuf.dll'
+2022-01-28T10:30:09.8370412-06:00:2022-01-28T10:30:09.8368592-06:00:Assembly resolving Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2022-01-28T10:30:09.8372688-06:00:2022-01-28T10:30:09.8371653-06:00:[AssemblyCache] Trying to resolve 'Microsoft.VisualStudio.TestPlatform.ObjectModel' from .deps.json file
+2022-01-28T10:30:09.8376044-06:00:2022-01-28T10:30:09.8374998-06:00:[AssemblyCache] Resolved 'Microsoft.VisualStudio.TestPlatform.ObjectModel' to 'C:\Users\aaron\.nuget\packages\microsoft.testplatform.objectmodel\17.0.0\lib\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll'
+2022-01-28T10:30:09.8566172-06:00:2022-01-28T10:30:09.8563242-06:00:Assembly resolving SpecFlow.Internal.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41
+2022-01-28T10:30:09.8575472-06:00:2022-01-28T10:30:09.8573071-06:00:[AssemblyCache] Trying to resolve 'SpecFlow.Internal.Json' from .deps.json file
+2022-01-28T10:30:09.8580556-06:00:2022-01-28T10:30:09.8578277-06:00:[AssemblyCache] Resolved 'SpecFlow.Internal.Json' to 'C:\Users\aaron\.nuget\packages\specflow.internal.json\1.0.8\lib\netstandard2.0\SpecFlow.Internal.Json.dll'
+2022-01-28T10:30:09.9062621-06:00:Thread#0: Test #4/0 is started on thread #0
+2022-01-28T10:30:09.9178096-06:00:2022-01-28T10:30:09.9173621-06:00:Thread#0:B:Given any user
+2022-01-28T10:30:09.9264411-06:00:2022-01-28T10:30:09.9261930-06:00:Assembly resolving PlatformService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2022-01-28T10:30:09.9267393-06:00:2022-01-28T10:30:09.9266204-06:00:[AssemblyCache] Trying to resolve 'PlatformService' from .deps.json file
+2022-01-28T10:30:09.9273091-06:00:2022-01-28T10:30:09.9272018-06:00:[DependencyContextAssemblyCache.ResolveManagedAssembly] Resolving 'PlatformService', found in dependency map, but unable to resolve a path in ['PlatformService.dll']
+2022-01-28T10:30:09.9275073-06:00:2022-01-28T10:30:09.9274054-06:00:[AssemblyCache] Could not resolve 'PlatformService' from .deps.json
+2022-01-28T10:30:09.9284503-06:00:2022-01-28T10:30:09.9283283-06:00:[AssemblyCache] Trying to resolve 'PlatformService' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:09.9305025-06:00:2022-01-28T10:30:09.9303089-06:00:[AssemblyCache] Trying to resolve 'PlatformService' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformService.dll'
+2022-01-28T10:30:09.9307807-06:00:2022-01-28T10:30:09.9306539-06:00:[AssemblyCache] Found file 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformService.dll' for assembly 'PlatformService'
+2022-01-28T10:30:09.9312859-06:00:2022-01-28T10:30:09.9310936-06:00:[AssemblyCache] Resolved 'PlatformService' to D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\PlatformService.dll
+2022-01-28T10:30:09.9318975-06:00:2022-01-28T10:30:09.9316471-06:00:Assembly resolving Microsoft.EntityFrameworkCore, Version=5.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-01-28T10:30:09.9322626-06:00:2022-01-28T10:30:09.9320700-06:00:[AssemblyCache] Trying to resolve 'Microsoft.EntityFrameworkCore' from .deps.json file
+2022-01-28T10:30:09.9327421-06:00:2022-01-28T10:30:09.9325603-06:00:[AssemblyCache] Resolved 'Microsoft.EntityFrameworkCore' to 'C:\Users\aaron\.nuget\packages\microsoft.entityframeworkcore\5.0.8\lib\netstandard2.1\Microsoft.EntityFrameworkCore.dll'
+2022-01-28T10:30:09.9552115-06:00:2022-01-28T10:30:09.9548605-06:00:Thread#0:T:error: Interface cannot be resolved: System.Collections.Generic.IReadOnlyDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension, Microsoft.EntityFrameworkCore, Version=5.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]] (resolution path: PlatformServiceSpecFlowProject.Steps.PlatformServiceSteps->PlatformService.Data.PlatformRepo->PlatformService.Data.AppDbContext->Microsoft.EntityFrameworkCore.DbContextOptions`1[[PlatformService.Data.AppDbContext, PlatformService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]) (0.0s)
+2022-01-28T10:30:09.9570635-06:00:2022-01-28T10:30:09.9568209-06:00:Thread#0:B:Then the return the list of Platforms
+2022-01-28T10:30:09.9580659-06:00:2022-01-28T10:30:09.9578345-06:00:Thread#0:T:skipped because of previous errors
+2022-01-28T10:30:09.9747553-06:00:Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+2022-01-28T10:30:09.9759937-06:00:Thread#0:Scheduler: get next test for thread 0
+2022-01-28T10:30:09.9760459-06:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2022-01-28T10:30:09.9760710-06:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-01-28T10:30:09.9761093-06:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-01-28T10:30:09.9761130-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-01-28T10:30:09.9761144-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-01-28T10:30:09.9761157-06:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-01-28T10:30:09.9761315-06:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-01-28T10:30:09.9761498-06:00:Thread#0:Scheduler: with testItemExecutionIndex 1
+2022-01-28T10:30:10.0138379-06:00:Thread#0: Test #4/0 is finished on thread #0 as Failed within 0.107022 seconds
+2022-01-28T10:30:10.0155878-06:00:Thread#0: Test #4/1 is started on thread #0
+2022-01-28T10:30:10.0163520-06:00:2022-01-28T10:30:10.0161375-06:00:Thread#0:B:Given any user
+2022-01-28T10:30:10.0174706-06:00:2022-01-28T10:30:10.0173288-06:00:Thread#0:T:error: Interface cannot be resolved: System.Collections.Generic.IReadOnlyDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension, Microsoft.EntityFrameworkCore, Version=5.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]] (resolution path: PlatformServiceSpecFlowProject.Steps.PlatformServiceSteps->PlatformService.Data.PlatformRepo->PlatformService.Data.AppDbContext->Microsoft.EntityFrameworkCore.DbContextOptions`1[[PlatformService.Data.AppDbContext, PlatformService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]) (0.0s)
+2022-01-28T10:30:10.0177763-06:00:2022-01-28T10:30:10.0176504-06:00:Thread#0:B:Then the return the list of Platforms
+2022-01-28T10:30:10.0180609-06:00:2022-01-28T10:30:10.0179295-06:00:Thread#0:T:skipped because of previous errors
+2022-01-28T10:30:10.0190446-06:00:Thread#0:Scheduler: get next test for thread 0
+2022-01-28T10:30:10.0190613-06:00:Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+2022-01-28T10:30:10.0190635-06:00:Thread#0:Scheduler: considering testitem #4 for thread 0
+2022-01-28T10:30:10.0190866-06:00:Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+2022-01-28T10:30:10.0190892-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+2022-01-28T10:30:10.0190905-06:00:Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+2022-01-28T10:30:10.0190919-06:00:Thread#0:Scheduler: using testitem #4 for thread 0
+2022-01-28T10:30:10.0190981-06:00:Thread#0:Scheduler: Test #4 is scheduled for thread
+2022-01-28T10:30:10.0191031-06:00:Thread#0:Scheduler: with testItemExecutionIndex 2
+2022-01-28T10:30:10.0201070-06:00:Thread#0: Test #4/1 is finished on thread #0 as Failed within 0.0044811 seconds
+2022-01-28T10:30:10.0203924-06:00:Thread#0: Test #4/2 is started on thread #0
+2022-01-28T10:30:10.0207163-06:00:2022-01-28T10:30:10.0206019-06:00:Thread#0:B:Given any user
+2022-01-28T10:30:10.0215960-06:00:2022-01-28T10:30:10.0214541-06:00:Thread#0:T:error: Interface cannot be resolved: System.Collections.Generic.IReadOnlyDictionary`2[[System.Type, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension, Microsoft.EntityFrameworkCore, Version=5.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]] (resolution path: PlatformServiceSpecFlowProject.Steps.PlatformServiceSteps->PlatformService.Data.PlatformRepo->PlatformService.Data.AppDbContext->Microsoft.EntityFrameworkCore.DbContextOptions`1[[PlatformService.Data.AppDbContext, PlatformService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]) (0.0s)
+2022-01-28T10:30:10.0218828-06:00:2022-01-28T10:30:10.0217536-06:00:Thread#0:B:Then the return the list of Platforms
+2022-01-28T10:30:10.0222759-06:00:2022-01-28T10:30:10.0220453-06:00:Thread#0:T:skipped because of previous errors
+2022-01-28T10:30:10.0231632-06:00:Thread#0:Scheduler: get next test for thread 0
+2022-01-28T10:30:10.0231751-06:00:Thread#:Scheduler: at the end of normal test queue
+2022-01-28T10:30:10.0231775-06:00:Thread#0:Scheduler: enumerator for thread is at end
+2022-01-28T10:30:10.0231799-06:00:Thread#0:Scheduler: No more tests for thread
+2022-01-28T10:30:10.0255031-06:00:Thread#0: Test #4/2 is finished on thread #0 as Failed within 0.0050814 seconds
+2022-01-28T10:30:10.0304012-06:00:2022-01-28T10:30:10.0302144-06:00:Got Deinitialize Signal
+2022-01-28T10:30:10.0322017-06:00:RPC Client disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Stream has been disposed
+Exception:<none>
+2022-01-28T10:30:10.0327013-06:00:RPC Server disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Reached end of stream.
+Exception:<none>
+2022-01-28T10:30:10.0334676-06:00:RPC Server disconnected, because 'Disposed'. 
+LastMessage: 
+Description:Reached end of stream.
+Exception:<none>
+2022-01-28T10:30:10.0344406-06:00:Assembly resolving System.Diagnostics.Process.resources, Version=4.2.2.0, Culture=en-US, PublicKeyToken=b03f5f7f11d50a3a
+2022-01-28T10:30:10.0344533-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' from .deps.json file
+2022-01-28T10:30:10.0344557-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' from .deps.json
+2022-01-28T10:30:10.0344603-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:10.0344618-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\System.Diagnostics.Process.resources.dll'
+2022-01-28T10:30:10.0344753-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\System.Diagnostics.Process.resources.exe'
+2022-01-28T10:30:10.0344835-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1'
+2022-01-28T10:30:10.0344876-06:00:TargetFramework: .NETCoreApp,Version=v3.1
+2022-01-28T10:30:10.0345220-06:00:Tfm: netcoreapp3.1
+2022-01-28T10:30:10.0345273-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2022-01-28T10:30:10.0345289-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\System.Diagnostics.Process.resources.dll'
+2022-01-28T10:30:10.0345433-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1\System.Diagnostics.Process.resources.exe'
+2022-01-28T10:30:10.0345527-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' in folder 'D:\poo\netcore\PlatformServiceSpecFlowProject\bin\Debug\netcoreapp3.1\SpecFlowPlusRunner\netcoreapp3.1'
+2022-01-28T10:30:10.0403579-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\3.1.18'
+2022-01-28T10:30:10.0403792-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\3.1.18\System.Diagnostics.Process.resources.dll'
+2022-01-28T10:30:10.0404169-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\3.1.18\System.Diagnostics.Process.resources.exe'
+2022-01-28T10:30:10.0404430-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\3.1.18'
+2022-01-28T10:30:10.0405528-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.18'
+2022-01-28T10:30:10.0405614-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.18\System.Diagnostics.Process.resources.dll'
+2022-01-28T10:30:10.0405913-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.18\System.Diagnostics.Process.resources.exe'
+2022-01-28T10:30:10.0406115-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.18'
+2022-01-28T10:30:10.0406979-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.1.18'
+2022-01-28T10:30:10.0407047-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.1.18\System.Diagnostics.Process.resources.dll'
+2022-01-28T10:30:10.0407386-06:00:[AssemblyCache] Trying to resolve 'System.Diagnostics.Process.resources' to 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.1.18\System.Diagnostics.Process.resources.exe'
+2022-01-28T10:30:10.0407568-06:00:[AssemblyCache] Could not resolve 'System.Diagnostics.Process.resources' in folder 'C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\3.1.18'
+2022-01-28T10:30:10.0413134-06:00:Assembly resolving System.Diagnostics.Process.resources, Version=4.2.2.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a
+2022-01-28T10:30:10.0462402-06:00:Thread#-1:Scheduler: get next test for thread -1
+2022-01-28T10:30:10.0462603-06:00:Thread#:Scheduler: at the end of normal test queue
+2022-01-28T10:30:10.0462623-06:00:Thread#-1:Scheduler: enumerator for thread is at end
+2022-01-28T10:30:10.0496844-06:00;Thread#12;Info;test run finished
+2022-01-28T10:30:10.0498397-06:00;Thread#12;Info;publishing test results
+2022-01-28T10:30:10.0499674-06:00;Thread#12;Info;Not publishing results.
+2022-01-28T10:30:10.0500483-06:00;Thread#12;Info;test results published
+2022-01-28T10:30:10.0500866-06:00;Thread#12;Info;generating reports
+2022-01-28T10:30:10.1017759-06:00;Thread#12;Info;Starting external report generation process
+2022-01-28T10:30:10.9996225-06:00;Thread#12;Info;Successfully generated reports.
+2022-01-28T10:30:11.0010099-06:00;Thread#12;Info;Successfully generated reports
+2022-01-28T10:30:11.0053540-06:00:Total: 1 (test executions: 3)
+2022-01-28T10:30:11.0063733-06:00:Succeeded: 0
+2022-01-28T10:30:11.0065399-06:00:Ignored: 0
+2022-01-28T10:30:11.0066736-06:00:Pending: 0
+2022-01-28T10:30:11.0066808-06:00:Skipped: 0
+2022-01-28T10:30:11.0068042-06:00:Failed: 1
+2022-01-28T10:30:11.0101639-06:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2022-01-28T10:30:11.0102160-06:00;VSTestExecutionThread;Info;adding Test Execution Report 'D:\poo\netcore\PlatformService\TestResults\Unnamed project__2022-01-28T103008.html'
+========== End of log file ==========

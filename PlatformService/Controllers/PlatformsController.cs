@@ -29,9 +29,9 @@ namespace PlatformService.Controllers
 
         [HttpGet]
         public ActionResult<IEnumerable<PlatformReadDto>> GetPlatforms()
-        {
+        {            
 
-            ConsoleWriteService.WriteLine(" Getting Platforms....");   
+            ConsoleWriteService.WriteLine("-> Getting Platforms....");   
             var platforms = _repository.GetAllPlatforms();
             return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
         }

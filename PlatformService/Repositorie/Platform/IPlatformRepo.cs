@@ -6,7 +6,6 @@ namespace PlatformService.Data
     public interface IPlatformRepo
     {
 
-        // comment two
         bool SaveChanges();
 
         IEnumerable<Platform> GetAllPlatforms();

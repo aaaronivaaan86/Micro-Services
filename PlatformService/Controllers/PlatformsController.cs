@@ -7,6 +7,7 @@ using PlatformService.Data;
 using PlatformService.Dtos;
 using PlatformService.Models;
 using PlatformService.Services;
+using PlatformService.SyncDataServices.Http;
 
 namespace PlatformService.Controllers
 {
@@ -14,17 +15,19 @@ namespace PlatformService.Controllers
     [ApiController]
     public class PlatformsController : ControllerBase
     {
-        private readonly IPlatformRepo _repository;
-        private readonly IMapper _mapper;
-
+        private readonly IPlatformRepo repository;
+        private readonly IMapper mapper;
+        private readonly ICommandDataClient commandDataClient;
 
         public PlatformsController(
             IPlatformRepo repository, 
-            IMapper mapper)
+            IMapper mapper,
+            ICommandDataClient commandDataClient )
 
         {
-            _repository = repository;
-            _mapper = mapper;
+            this.repository = repository;
+            this.mapper = mapper;
+            this.commandDataClient = commandDataClient;
         }
 
         [HttpGet]
@@ -32,17 +35,17 @@ namespace PlatformService.Controllers
         {            
 
             ConsoleWriteService.WriteLine("-> Getting Platforms....");   
-            var platforms = _repository.GetAllPlatforms();
-            return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
+            var platforms = this.repository.GetAllPlatforms();
+            return Ok(this.mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
         }
 
         [HttpGet("{id}", Name = "GetPlatformById")]
         public ActionResult<PlatformReadDto> GetPlatformById(int id)
         {
-            var platformItem = _repository.GetPlatformById(id);
+            var platformItem = this.repository.GetPlatformById(id);
             if (platformItem != null)
             {
-                return Ok(_mapper.Map<PlatformReadDto>(platformItem));
+                return Ok(this.mapper.Map<PlatformReadDto>(platformItem));
             }
 
             return NotFound();
@@ -53,23 +56,23 @@ namespace PlatformService.Controllers
         {
 
             ConsoleWriteService.WriteLine(" Creating Platform....");
-            var platformModel = _mapper.Map<Platform>(platformCreateDto);
-            _repository.CreatePlatform(platformModel);
-            _repository.SaveChanges();
+            var platformModel = this.mapper.Map<Platform>(platformCreateDto);
+            this.repository.CreatePlatform(platformModel);
+            this.repository.SaveChanges();
 
-            var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
+            var platformReadDto = this.mapper.Map<PlatformReadDto>(platformModel);
 
-            // // Send Sync Message
-            // try
-            // {
-            //     await _commandDataClient.SendPlatformToCommand(platformReadDto);
-            // }
-            // catch(Exception ex)cls
-            // {
-            //     Console.WriteLine($"--> Could not send synchronously: {ex.Message}");
-            // }
+            // Send Sync Message
+            try
+            {
+                await this.commandDataClient.SendPlatformToCommand(platformReadDto);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"--> Could not send synchronously: {ex.Message}");
+            }
 
-            // //Send Async Message
+            // Send Async Message
             // try
             // {
             //     var platformPublishedDto = _mapper.Map<PlatformPublishedDto>(platformReadDto);

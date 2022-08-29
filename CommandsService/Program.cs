@@ -1,4 +1,5 @@
 using CommandService.Data;
+using CommandsService.EventProcessing;
 using CommandsService.Repositorie.Command;
 using CommandsService.Repositorie.Platform;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Conf
 
 builder.Services.AddTransient<ICommandRepo, CommandRepo>();
 builder.Services.AddTransient<IPlatformRepo, PlatformRepo>();
+builder.Services.AddTransient<IEventProcessor, EventProcessor>();
 
 
 

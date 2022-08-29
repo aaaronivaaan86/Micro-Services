@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ESOrqplPejocjJVBc7Sv+6Nei1rWqjvzfMKAhp4n5cNdH+u9bqCIRZf01Tk1AEUgzZ6ml01lblgkKwPIH0tn5w==",
+  "dgSpecHash": "yjapHDCETlpyymqc/TTWKE1BzroGq3VTZL2Uc57f9lWbcNpMCR1b8gdyyqMLEU339wI1VcirPRPyqQB1HBkBOw==",
   "success": true,
   "projectFilePath": "C:\\poo\\netcore\\Micro-Services\\PlatformService\\PlatformService.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,7 @@
     "C:\\Users\\aaron\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\aaron\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\aaron\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\aaron\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\aaron\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

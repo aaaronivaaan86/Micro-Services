@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: platforms-deplo
+  # namespace: k8s-platforms
 spec:
   replicas: 1
   selector:

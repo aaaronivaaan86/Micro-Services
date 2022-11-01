@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PlatformService.ActionFilters.Platforms;
 using PlatformService.AsyncDataServices;
 using PlatformService.Data;
 using PlatformService.Dtos;
 using PlatformService.Models;
 using PlatformService.Services;
+using PlatformService.Services.Platforms;
 using PlatformService.SyncDataServices.Http;
 
 namespace PlatformService.Controllers
@@ -17,29 +19,33 @@ namespace PlatformService.Controllers
     public class PlatformsController : ControllerBase
     {
         private readonly IPlatformRepo repository;
+        private readonly IPlatformService platformService;
         private readonly IMapper mapper;
         private readonly ICommandDataClient commandDataClient;
         private readonly IMessageBusClient messageBusClient;
 
         public PlatformsController(
-            IPlatformRepo repository, 
+            IPlatformRepo repository,
+            IPlatformService platformService,
             IMapper mapper,
             ICommandDataClient commandDataClient,
             IMessageBusClient messageBusClient )
 
         {
             this.repository = repository;
+            this.platformService = platformService;
             this.mapper = mapper;
             this.commandDataClient = commandDataClient;
             this.messageBusClient = messageBusClient;
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(FilterAttributeExample))]
         public ActionResult<IEnumerable<PlatformReadDto>> GetPlatforms()
         {            
 
-            ConsoleWriteService.WriteLine("-> Getting Platforms....");   
-            var platforms = this.repository.GetAllPlatforms();
+            ConsoleWriteService.WriteLine("-> Getting Platforms....");
+            var platforms = this.platformService.GetAllPlatforms();
             return Ok(this.mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
         }
 
@@ -56,10 +62,12 @@ namespace PlatformService.Controllers
         }
 
         [HttpPost]
+        [ServiceFilter(typeof(FilterAttributeExample))]
         public async Task<ActionResult<PlatformReadDto>> CreatePlatform(PlatformCreateDto platformCreateDto)
         {
 
             ConsoleWriteService.WriteLine(" Creating Platform....");
+
             var platformModel = this.mapper.Map<Platform>(platformCreateDto);
             this.repository.CreatePlatform(platformModel);
             this.repository.SaveChanges();

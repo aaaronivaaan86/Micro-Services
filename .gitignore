@@ -142,3 +142,8 @@ CommandsService/obj/Debug/net6.0/CommandsService.pdb
 CommandsService/obj/Debug/net6.0/staticwebassets.build.json
 CommandsService/obj/Debug/net6.0/ref/CommandsService.dll
 CommandsService/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/PostalCodeService/.vs
+/PostalCodeService/bin/Debug/net6.0
+/PostalCodeService/obj
+/PostalCodeService/Configuration/PostalCodeStoreDatabase.cs
+/PostalCodeService/Properties

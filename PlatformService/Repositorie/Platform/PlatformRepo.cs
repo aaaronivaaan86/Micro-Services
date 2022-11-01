@@ -24,6 +24,17 @@ namespace PlatformService.Data
             _context.Platforms.Add(plat);
         }
 
+        public void UpdatePlatform(Platform plat)
+        {
+            if (plat == null)
+            {
+                throw new ArgumentNullException(nameof(plat));
+            }
+
+            _context.Platforms.Add(plat);
+        }
+
+
         public IEnumerable<Platform> GetAllPlatforms()
         {
             return _context.Platforms.ToList();

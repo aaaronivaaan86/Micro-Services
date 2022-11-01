@@ -1,0 +1,3 @@
+@startuml bloggin-context
+
+Person(author, "Author")

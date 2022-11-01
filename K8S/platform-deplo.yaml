@@ -1,8 +1,15 @@
+# kind: Namespace
+# apiVersion: v1
+# metadata:
+#   name: platforms-namespace
+#   labels:
+#     name: platforms-namespace
+  
+# ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: platforms-deplo
-  # namespace: k8s-platforms
 spec:
   replicas: 1
   selector:
@@ -16,6 +23,7 @@ spec:
       containers:
         - name: platformservice
           image: aaaronivaaan/platformservice:latest
+
 
 ---        
 

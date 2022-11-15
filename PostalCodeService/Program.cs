@@ -1,5 +1,7 @@
 using Microsoft.OpenApi.Models;
 using PostalCodeService.Configuration;
+using PostalCodeService.Respositories;
+using PostalCodeService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +34,9 @@ builder.Services.AddSwaggerGen(options =>
 // Add services to the container.
 builder.Services.Configure<PostalCodeStoreDatabase>(
     builder.Configuration.GetSection("PostalCodeStoreDatabase"));
+
+builder.Services.AddTransient<IPostalCodeRepositories, PostalCodeRepositories>();
+builder.Services.AddTransient<IPostalCodeService, PostalCodeService.Services.PostalCodeService>();
 
 var app = builder.Build();
 

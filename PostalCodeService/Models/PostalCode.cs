@@ -6,12 +6,12 @@ namespace PostalCodeService.Models
 {
     public class PostalCode
     {
+
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public int Id { get; set; }
-        [Required]
+        public string Id { get; set; }
+        
         public string Name { get; set; }
-        [Required]
         public bool IsActive { get; set; }
     }
 }

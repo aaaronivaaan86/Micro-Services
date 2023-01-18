@@ -19,7 +19,7 @@ namespace PostalCodeService.Controllers
         [HttpGet]
         public async Task<ActionResult> GetPostalCodeInfo()
         {
-            var postalcodeList = this.postalCodeService.GetPostalCodes();
+            var postalcodeList = await this.postalCodeService.GetPostalCodes();
             return Ok(postalcodeList);
         }
 

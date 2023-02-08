@@ -1,5 +1,6 @@
 ﻿using IdentityService.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace IdentityService.Data
 {
@@ -8,7 +9,7 @@ namespace IdentityService.Data
         public static void Initialize(IServiceProvider serviceProvider)
         {
             var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
-            
+            context.Database.Migrate();
         }
 
         public static void IdentityDbContextInitializer(WebApplication app) {

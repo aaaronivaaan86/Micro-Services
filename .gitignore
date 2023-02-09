@@ -145,7 +145,6 @@ CommandsService/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClien
 /PostalCodeService/.vs
 /PostalCodeService/bin/Debug/net6.0
 /PostalCodeService/obj
-/PostalCodeService/Configuration/PostalCodeStoreDatabase.cs
 /PostalCodeService/Properties
 /IdentityService/.vs/IdentityService/config
 /IdentityService/.vs/IdentityService/DesignTimeBuild
@@ -155,4 +154,3 @@ CommandsService/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClien
 /IdentityService/bin/Debug/net6.0
 /IdentityService/obj
 /RunTimeAirTables
-*.json

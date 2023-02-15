@@ -7,10 +7,10 @@ namespace IdentityService.Models
         [Required]
         [EmailAddress]
         [MinLength(5)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [Required]
         [MinLength(8)]
-        public string Password { get; set; }    
+        public string? Password { get; set; }    
 
     }
 }

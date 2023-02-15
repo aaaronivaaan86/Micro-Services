@@ -1,4 +1,5 @@
 ﻿using IdentityService.Models;
+using IdentityService.Services.Account;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,12 @@ namespace IdentityService.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly IAccountService accountService;
+
+        public AccountController(IAccountService accountService)
+        {
+            this.accountService = accountService;
+        }
         
         [HttpGet("Test/{name}")]
         public ActionResult<string> Test(string name)
@@ -16,13 +23,15 @@ namespace IdentityService.Controllers
         }
 
         [HttpPost("CreateAccount")]
-        public ActionResult<string> CreateAccount([FromBody] CreateAccount account)
+        public async Task<ActionResult<string>> CreateAccount([FromBody] CreateAccountForm account)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            return Ok($"send {account.Email} and {account.Password}");
+            var resut= await this.accountService.CreateUser(account);    
+
+            return Ok($"Account create {account.Email} ");
         }
     }
 }

@@ -19,9 +19,22 @@ namespace CA.Infraestructure.Repositories
             this.dbCtx = dbCtx;
         }
 
+
+
         public IEnumerable<Platform> GetPlatforms()
         {
             return this.dbCtx.Platforms.ToList();
+        }
+
+
+        public Platform CreatePlatform(Platform platform)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Platform GetPlatformById(int platformId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

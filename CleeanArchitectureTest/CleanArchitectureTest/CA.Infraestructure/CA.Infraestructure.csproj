@@ -8,7 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Repositories\Interfaces\" />
-    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CA.Data\CA.Data.csproj" />
+    <ProjectReference Include="..\CA.Domain\CA.Domain.csproj" />
   </ItemGroup>
 
 </Project>

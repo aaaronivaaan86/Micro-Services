@@ -5,12 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CA.Infraestructure.Repositories.Interfaces
+namespace CA.Infraestructure.Services.Interfaces
 {
-    public interface IPlatformRepo
+    public interface IPlatformService
     {
         IEnumerable<Platform> GetPlatforms();
-        Platform GetPlatformById(int platformId);
-        Platform CreatePlatform(Platform platform);
     }
 }

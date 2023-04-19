@@ -7,6 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
+RUN apt-get update
 COPY ["IdentityService.csproj", "."]
 RUN dotnet restore "./IdentityService.csproj"
 COPY . .

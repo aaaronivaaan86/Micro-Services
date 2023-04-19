@@ -38,7 +38,7 @@ namespace IdentityService.Controllers
         }
         [HttpGet("AccountInfo")]
         [Authorize(
-            Policy = IdentitySettings.CustomerRightsPolicyName,
+            Policy = IdentitySettings.ElevatedRightsPolicyName,
             AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult<dynamic> GetAccountInfo()
         {

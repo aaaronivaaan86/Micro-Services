@@ -16,6 +16,16 @@ namespace PostalCodeService.Services
             return this.postalCodeRepositorie.AddPostalCode(postalCode);
         }
 
+        public Task<List<PostalCode>> AddPostalCodes(List<PostalCode> postalCodes)
+        {
+            return postalCodeRepositorie.AddPostalCodes(postalCodes);   
+        }
+
+        public Task<List<PostalCode>> GetPostalCodeByZip(string zipCode)
+        {
+            return postalCodeRepositorie.GetPostalCodeByZip(zipCode);
+        }
+
         public Task<List<PostalCode>> GetPostalCodes()
         {
             return this.postalCodeRepositorie.GetPostalCodes();

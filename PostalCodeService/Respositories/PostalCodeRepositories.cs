@@ -18,6 +18,12 @@ namespace PostalCodeService.Respositories
 
             _postalCodeCollection = mongoDatabase.GetCollection<PostalCode>(this.postalCodeStore.PostalCodeCollection);
         }
+        public async Task<List<PostalCode>> AddPostalCodes(List<PostalCode> postalCodes)
+        {
+            await _postalCodeCollection.InsertManyAsync(postalCodes);
+            return postalCodes;
+        }
+
         public async Task<PostalCode> AddPostalCode(PostalCode postalCode)
         {
             await _postalCodeCollection.InsertOneAsync(postalCode);
@@ -27,6 +33,12 @@ namespace PostalCodeService.Respositories
         public async Task<List<PostalCode>> GetPostalCodes()
         {
             return await _postalCodeCollection.Find(_ => true).ToListAsync();
+        }
+
+        public async Task<List<PostalCode>> GetPostalCodeByZip(string zipCode)
+        {
+            
+            return await _postalCodeCollection.Find(pc => pc.ZipCode == zipCode).ToListAsync();
         }
 
         public async Task RemovePostalCode(string id)

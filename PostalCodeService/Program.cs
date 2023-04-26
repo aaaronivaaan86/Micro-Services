@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.OpenApi.Models;
 using PostalCodeService.Configuration;
 using PostalCodeService.Respositories;
@@ -37,6 +38,18 @@ builder.Services.Configure<PostalCodeStoreDatabase>(
 
 builder.Services.AddTransient<IPostalCodeRepositories, PostalCodeRepositories>();
 builder.Services.AddTransient<IPostalCodeService, PostalCodeService.Services.PostalCodeService>();
+builder.Services.AddTransient<IImportExelService, ImportExelService>();
+
+builder.Services.Configure<FormOptions>(x =>
+{
+    x.ValueLengthLimit = int.MaxValue; // Limit on individual form values
+    x.MultipartBodyLengthLimit = int.MaxValue; // Limit on form body size
+    x.MultipartHeadersLengthLimit = int.MaxValue; // Limit on form header size
+});
+builder.Services.Configure<IISServerOptions>(options =>
+{
+    options.MaxRequestBodySize = int.MaxValue; // Limit on request body size
+});
 
 var app = builder.Build();
 

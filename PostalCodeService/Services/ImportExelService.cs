@@ -46,42 +46,46 @@ namespace PostalCodeService.Services
                     {
                         WorkbookPart workbookPart = doc.WorkbookPart;
                         IEnumerable<Sheet> sheets = doc.WorkbookPart.Workbook.GetFirstChild<Sheets>().Elements<Sheet>();
-                        string relationshipId = sheets.First().Id.Value;
-                        WorksheetPart worksheetPart = (WorksheetPart)doc.WorkbookPart.GetPartById(relationshipId);
-                        Worksheet workSheet = worksheetPart.Worksheet;
-                        SheetData sheetData = workSheet.GetFirstChild<SheetData>();
-                        IEnumerable<Row> rows = sheetData.Descendants<Row>();
-                        //foreach (Cell cell in rows.ElementAt(0))
-                        //{
-                        //    string test = GetCellValue(doc, cell);
-                        //    Console.Write(test);
-                        //}
-                        bool headers = false;
-                        //this will also include your header row...
-                        foreach (Row row in rows)
+                        foreach (Sheet sheet in sheets)
                         {
-                            //if(headers)
-                            //for (int i = 0; i < row.Descendants<Cell>().Count(); i++)
+                            string relationshipId = sheet.Id.Value;
+                            WorksheetPart worksheetPart = (WorksheetPart)doc.WorkbookPart.GetPartById(relationshipId);
+                            Worksheet workSheet = worksheetPart.Worksheet;
+                            SheetData sheetData = workSheet.GetFirstChild<SheetData>();
+                            IEnumerable<Row> rows = sheetData.Descendants<Row>();
+                            //foreach (Cell cell in rows.ElementAt(0))
                             //{
-                            //    string test = GetCellValue(doc, row.Descendants<Cell>().ElementAt(i));
+                            //    string test = GetCellValue(doc, cell);
                             //    Console.Write(test);
                             //}
-                            if (headers) {
-                                PostalCode postalCode = new PostalCode();
+                            bool headers = false;
+                            //this will also include your header row...
+                            foreach (Row row in rows)
+                            {
+                                //if(headers)
+                                //for (int i = 0; i < row.Descendants<Cell>().Count(); i++)
+                                //{
+                                //    string test = GetCellValue(doc, row.Descendants<Cell>().ElementAt(i));
+                                //    Console.Write(test);
+                                //}
+                                if (headers)
+                                {
+                                    PostalCode postalCode = new PostalCode();
 
-                                postalCode.Code = GetCellValue(doc, row.Descendants<Cell>().ElementAt(0));
-                                postalCode.Name_State = GetCellValue(doc, row.Descendants<Cell>().ElementAt(4));
-                                postalCode.Name_City = GetCellValue(doc, row.Descendants<Cell>().ElementAt(5));
-                                postalCode.Name_Municipality = GetCellValue(doc, row.Descendants<Cell>().ElementAt(3));
-                                postalCode.ZipCode = GetCellValue(doc, row.Descendants<Cell>().ElementAt(6));
-                                postalCode.Settlement = GetCellValue(doc, row.Descendants<Cell>().ElementAt(1));
-                                postalCode.SettlementType = GetCellValue(doc, row.Descendants<Cell>().ElementAt(2));
-                                postalCodes.Add(postalCode);
+                                    postalCode.Code = GetCellValue(doc, row.Descendants<Cell>().ElementAt(0));
+                                    postalCode.Name_State = GetCellValue(doc, row.Descendants<Cell>().ElementAt(4));
+                                    postalCode.Name_City = GetCellValue(doc, row.Descendants<Cell>().ElementAt(5));
+                                    postalCode.Name_Municipality = GetCellValue(doc, row.Descendants<Cell>().ElementAt(3));
+                                    postalCode.ZipCode = GetCellValue(doc, row.Descendants<Cell>().ElementAt(6));
+                                    postalCode.Settlement = GetCellValue(doc, row.Descendants<Cell>().ElementAt(1));
+                                    postalCode.SettlementType = GetCellValue(doc, row.Descendants<Cell>().ElementAt(2));
+                                    postalCodes.Add(postalCode);
+                                }
+
+                                headers = true;
+
+
                             }
-
-                            headers = true;
-                           
-
                         }
                     }
 

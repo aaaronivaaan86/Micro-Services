@@ -168,3 +168,10 @@ CommandsService/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClien
 /PlatformService/obj/Release/netcoreapp5.0
 /PlatformService/.vs/PlatformService
 /PlatformService/.vs/ProjectEvaluation
+/PaymentService/obj
+/PaymentService/bin/Debug/net6.0
+/PaymentService/.vs
+/PaymentService.Abstracts/bin/Debug/net6.0
+/PaymentService.Abstracts/obj
+/PaymentApiService.Infrastructure/bin/Debug/net6.0
+/PaymentApiService.Infrastructure/obj
